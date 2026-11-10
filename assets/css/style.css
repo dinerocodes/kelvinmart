@@ -17,7 +17,7 @@
   --black-color2: #1d1d1d;
   --title-color: #13141a;
   --text-color: #5e5e5e;
-  --primary-color1: #46d993;
+  --primary-color1: #067E80;
 }
 
 /*================================================
@@ -33084,14 +33084,22 @@ button {
 }
 
 .modern-header .header-logo {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+  display: flex !important;
+  align-items: center !important;
+  width: 260px !important;
+  min-width: 260px !important;
+  max-width: none !important;
+  flex-shrink: 0 !important;
 }
 
 .modern-header .header-logo img {
-  max-width: 160px;
-  height: auto;
+  display: block !important;
+  width: 100px !important;
+  min-width: 130px !important;
+  max-width: none !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
 }
 
 .modern-header .main-navigation {
@@ -33209,8 +33217,9 @@ button {
   /* Logo */
 
   .modern-header .header-logo img {
-    max-width: 145px;
-    height: auto;
+    width: 175px !important;
+    max-width: 175px !important;
+    height: auto !important;
   }
 
   /* Right-side controls */
